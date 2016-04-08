@@ -22,13 +22,13 @@ RUN apt-get -y install git build-essential libssl-dev libdb++-dev libboost-all-d
 RUN git clone https://github.com/tm2013/Radium.git
 
 # Specify the correct volume
-VOLUME /Radium
+VOLUME /radium
 
 # Expose the default RPC and P2P port
 EXPOSE 27913 27914
 
 # Specify the correct working directory
-WORKDIR /Radium
+WORKDIR /radium
 
 # Build Radium-qt and Radiumd
 ENTRYPOINT qmake USE_03=1 RELEASE=1 && make && cd src && make -f makefile.unix && strip Radiumd
