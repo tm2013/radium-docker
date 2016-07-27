@@ -7,7 +7,7 @@
 FROM ubuntu:latest
 
 # Docker author
-MAINTAINER Tim M. [tm2013@projectradium.org]
+MAINTAINER Tim Mesker [tm2013@projectradium.org]
 
 # Update the repository sources list
 RUN apt-get -y update
@@ -19,7 +19,7 @@ RUN apt-get -y update
 RUN apt-get -y install git build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools
 
 # Clone the Radium source code from Github
-RUN git clone https://github.com/tm2013/Radium.git && cd Radium
+RUN git clone https://github.com/ProjectRadium/Radium.git && cd Radium
 
 # Specify the correct volume
 VOLUME /Radium
