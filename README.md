@@ -1,4 +1,6 @@
 # radium-docker
+[![](https://images.microbadger.com/badges/image/tm2013/radium-docker-ab.svg)](https://microbadger.com/images/tm2013/radium-docker-ab "Get your own image badge on microbadger.com")
+
 Docker image for building the various Radium nodes.
 
 
